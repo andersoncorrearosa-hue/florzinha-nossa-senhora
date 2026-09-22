@@ -1,5 +1,5 @@
 const CACHE_NAME =
-  "florzinha-nossa-senhora-v1";
+  "florzinha-nossa-senhora-v2";
 
 
 const ARQUIVOS = [
@@ -8,11 +8,12 @@ const ARQUIVOS = [
   "./styles.css",
   "./script.js",
   "./manifest.json",
-  "./icon.svg"
+  "./icon.svg",
+  "./nossa-senhora-auxiliadora.png",
+  "./dom-bosco.png"
 ];
 
 
-// Instalação
 self.addEventListener(
   "install",
   evento => {
@@ -34,7 +35,6 @@ self.addEventListener(
 );
 
 
-// Ativação
 self.addEventListener(
   "activate",
   evento => {
@@ -71,7 +71,6 @@ self.addEventListener(
 );
 
 
-// Funcionamento offline
 self.addEventListener(
   "fetch",
   evento => {
