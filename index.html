@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="theme-color"
+    content="#2e6fa8"
+  >
+
+  <meta
+    name="description"
+    content="Uma flor por dia para Nossa Senhora Auxiliadora durante o mês de maio."
+  >
+
+  <meta
+    name="apple-mobile-web-app-capable"
+    content="yes"
+  >
+
+  <meta
+    name="apple-mobile-web-app-status-bar-style"
+    content="default"
+  >
+
+  <meta
+    name="apple-mobile-web-app-title"
+    content="Florzinha"
+  >
+
+  <title>
+    Florzinha de Nossa Senhora
+  </title>
+
+  <link
+    rel="manifest"
+    href="manifest.json"
+  >
+
+  <link
+    rel="icon"
+    href="icon.svg"
+    type="image/svg+xml"
+  >
+
+  <link
+    rel="stylesheet"
+    href="styles.css"
+  >
+</head>
+
+
+<body>
+
+  <main class="inicio">
+
+    <div class="marca-topo">
+      <span>🌸</span>
+      <strong>Maio • 31 dias com Maria</strong>
+    </div>
+
+
+    <section class="hero-maria">
+
+      <div class="estrelas">
+        ✦ ✧ ✦
+      </div>
+
+      <div class="icone-maria">
+        👑
+      </div>
+
+      <div class="rosas-maria">
+        🌹 💙 🌹
+      </div>
+
+      <p class="nome-maria">
+        Nossa Senhora Auxiliadora
+      </p>
+
+    </section>
+
+
+    <h1>
+      Florzinha de Nossa Senhora
+    </h1>
+
+
+    <p class="subtitulo">
+      Uma flor por dia para Maria
+    </p>
+
+
+    <p class="mensagem">
+
+      Durante o mês de maio,
+      transforme uma pequena atitude
+      do seu dia em uma flor espiritual
+      oferecida a Nossa Senhora Auxiliadora.
+
+    </p>
+
+
+    <div class="chamada">
+
+      <span class="icone-chamada">
+        🌷
+      </span>
+
+      <div>
+
+        <strong>
+          Sua florzinha de hoje está esperando
+        </strong>
+
+        <small>
+          Escolha seu perfil para começar
+        </small>
+
+      </div>
+
+    </div>
+
+
+    <div class="perfis">
+
+      <button
+        class="botao-perfil"
+        onclick="escolherPublico('crianca')"
+      >
+
+        <span class="emoji-perfil">
+          👧
+        </span>
+
+        <span class="texto-perfil">
+
+          <strong>
+            Criança
+          </strong>
+
+          <small>
+            Uma missão simples e alegre
+          </small>
+
+        </span>
+
+        <span class="seta">
+          ›
+        </span>
+
+      </button>
+
+
+      <button
+        class="botao-perfil"
+        onclick="escolherPublico('adolescente')"
+      >
+
+        <span class="emoji-perfil">
+          🧑
+        </span>
+
+        <span class="texto-perfil">
+
+          <strong>
+            Adolescente
+          </strong>
+
+          <small>
+            Um desafio para viver no cotidiano
+          </small>
+
+        </span>
+
+        <span class="seta">
+          ›
+        </span>
+
+      </button>
+
+
+      <button
+        class="botao-perfil"
+        onclick="escolherPublico('adulto')"
+      >
+
+        <span class="emoji-perfil">
+          👨
+        </span>
+
+        <span class="texto-perfil">
+
+          <strong>
+            Adulto
+          </strong>
+
+          <small>
+            Uma atitude concreta de fé e amor
+          </small>
+
+        </span>
+
+        <span class="seta">
+          ›
+        </span>
+
+      </button>
+
+    </div>
+
+
+    <div class="separador-inicio">
+      <span>
+        acompanhe seu caminho
+      </span>
+    </div>
+
+
+    <button
+      class="botao-jardim"
+      onclick="escolherJardim()"
+    >
+
+      <span class="icone-jardim">
+        🌷
+      </span>
+
+      <span>
+
+        <strong>
+          Meu Jardim de Maria
+        </strong>
+
+        <small>
+          Veja as flores que você já ofereceu
+        </small>
+
+      </span>
+
+    </button>
+
+
+    <div class="salesiano">
+
+      <div class="simbolo-salesiano">
+        🌿
+      </div>
+
+      <p>
+        Inspirado na espiritualidade
+        de Dom Bosco e no amor
+        a Nossa Senhora Auxiliadora.
+      </p>
+
+    </div>
+
+  </main>
+
+
+  <script src="script.js"></script>
+
+
+  <script>
+
+    if ("serviceWorker" in navigator) {
+
+      window.addEventListener(
+        "load",
+        function () {
+
+          navigator
+            .serviceWorker
+            .register("./service-worker.js")
+            .catch(
+              function (erro) {
+
+                console.log(
+                  "Service Worker ainda não disponível:",
+                  erro
+                );
+
+              }
+            );
+
+        }
+      );
+
+    }
+
+  </script>
+
+</body>
+
+</html>

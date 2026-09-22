@@ -1,0 +1,1180 @@
+/* =========================================
+   CONFIGURAÇÃO GERAL
+========================================= */
+
+:root {
+  --azul: #2e6fa8;
+  --azul-escuro: #24577f;
+  --azul-claro: #eaf5ff;
+
+  --rosa: #c75f83;
+  --rosa-claro: #fff0f5;
+
+  --verde: #6f9d72;
+  --verde-claro: #edf7ea;
+
+  --texto: #33424d;
+  --texto-suave: #75828b;
+
+  --branco: #ffffff;
+
+  --sombra:
+    0 18px 55px
+    rgba(43, 93, 135, 0.16);
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+
+  min-height: 100vh;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  background:
+    radial-gradient(
+      circle at top,
+      #f9fcff 0%,
+      #e4f2ff 38%,
+      #fff8f0 100%
+    );
+
+  color: var(--texto);
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: flex-start;
+
+  padding: 28px 16px;
+}
+
+
+/* =========================================
+   CARTÃO PRINCIPAL
+========================================= */
+
+.inicio {
+  width: 100%;
+
+  max-width: 430px;
+
+  background:
+    rgba(255, 255, 255, 0.97);
+
+  border-radius: 30px;
+
+  padding: 24px;
+
+  text-align: center;
+
+  box-shadow:
+    var(--sombra);
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.9);
+}
+
+
+/* =========================================
+   TOPO
+========================================= */
+
+.marca-topo {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  padding:
+    7px 12px;
+
+  margin-bottom: 17px;
+
+  background:
+    var(--rosa-claro);
+
+  border-radius: 20px;
+
+  color:
+    #a64f6d;
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   HERO DE NOSSA SENHORA
+========================================= */
+
+.hero-maria {
+  position: relative;
+
+  overflow: hidden;
+
+  padding:
+    22px 15px;
+
+  margin-bottom: 22px;
+
+  border-radius: 26px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #dceeff 0%,
+      #edf7ff 55%,
+      #fff8ec 100%
+    );
+
+  border:
+    1px solid
+    #d4e8f8;
+}
+
+
+.hero-maria::before {
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+
+  height: 180px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(255, 255, 255, 0.5);
+
+  top: -80px;
+
+  left: -60px;
+}
+
+
+.hero-maria::after {
+  content: "";
+
+  position: absolute;
+
+  width: 150px;
+
+  height: 150px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(255, 236, 196, 0.35);
+
+  bottom: -80px;
+
+  right: -45px;
+}
+
+
+.estrelas {
+  position: relative;
+
+  z-index: 2;
+
+  color: #e4b14d;
+
+  letter-spacing: 7px;
+
+  font-size: 18px;
+}
+
+
+.icone-maria {
+  position: relative;
+
+  z-index: 2;
+
+  margin:
+    8px 0
+    3px;
+
+  font-size: 47px;
+}
+
+
+.rosas-maria {
+  position: relative;
+
+  z-index: 2;
+
+  font-size: 27px;
+
+  letter-spacing: 4px;
+}
+
+
+.nome-maria {
+  position: relative;
+
+  z-index: 2;
+
+  margin:
+    10px 0
+    0;
+
+  color:
+    var(--azul);
+
+  font-size: 15px;
+
+  font-weight: bold;
+
+  letter-spacing: 0.2px;
+}
+
+
+/* =========================================
+   TÍTULO
+========================================= */
+
+h1 {
+  margin:
+    0 0
+    7px;
+
+  color:
+    var(--azul);
+
+  font-size: 31px;
+
+  line-height: 1.15;
+}
+
+
+.subtitulo {
+  margin:
+    0 0
+    19px;
+
+  color:
+    var(--rosa);
+
+  font-size: 17px;
+
+  font-weight: bold;
+}
+
+
+h2 {
+  margin:
+    10px 0
+    24px;
+
+  color:
+    var(--rosa);
+
+  font-size: 18px;
+
+  font-weight: 500;
+}
+
+
+/* =========================================
+   MENSAGEM INICIAL
+========================================= */
+
+.mensagem {
+  margin:
+    0 auto
+    22px;
+
+  color:
+    #56646e;
+
+  font-size: 15px;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================
+   CHAMADA
+========================================= */
+
+.chamada {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 14px;
+
+  margin:
+    0 0
+    15px;
+
+  text-align: left;
+
+  background:
+    #f5f9fd;
+
+  border-radius: 18px;
+
+  border:
+    1px solid
+    #e4edf4;
+}
+
+
+.icone-chamada {
+  font-size: 30px;
+}
+
+
+.chamada strong {
+  display: block;
+
+  color:
+    #3d5363;
+
+  font-size: 14px;
+}
+
+
+.chamada small {
+  display: block;
+
+  margin-top: 4px;
+
+  color:
+    var(--texto-suave);
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   BOTÕES
+========================================= */
+
+button {
+  font-family: inherit;
+
+  cursor: pointer;
+}
+
+
+.perfis {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+
+.botao-perfil {
+  width: 100%;
+
+  min-height: 69px;
+
+  padding:
+    12px 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  text-align: left;
+
+  border:
+    1px solid
+    #dce8f1;
+
+  border-radius: 18px;
+
+  background:
+    #ffffff;
+
+  color:
+    var(--texto);
+
+  box-shadow:
+    0 5px 14px
+    rgba(57, 89, 110, 0.06);
+
+  transition:
+    0.2s;
+}
+
+
+.botao-perfil:hover {
+  transform:
+    translateY(-2px);
+
+  border-color:
+    #b8d4e8;
+
+  box-shadow:
+    0 8px 20px
+    rgba(57, 89, 110, 0.11);
+}
+
+
+.emoji-perfil {
+  min-width: 45px;
+
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background:
+    var(--azul-claro);
+
+  border-radius: 14px;
+
+  font-size: 25px;
+}
+
+
+.texto-perfil {
+  flex: 1;
+}
+
+
+.texto-perfil strong {
+  display: block;
+
+  color:
+    var(--azul-escuro);
+
+  font-size: 16px;
+}
+
+
+.texto-perfil small {
+  display: block;
+
+  margin-top: 4px;
+
+  color:
+    var(--texto-suave);
+
+  font-size: 12px;
+
+  line-height: 1.3;
+}
+
+
+.seta {
+  color:
+    #9aaab5;
+
+  font-size: 27px;
+
+  font-weight: normal;
+}
+
+
+/* =========================================
+   SEPARADOR
+========================================= */
+
+.separador-inicio {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin:
+    21px 0
+    16px;
+
+  color:
+    #9aa5ad;
+
+  font-size: 11px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.7px;
+}
+
+
+.separador-inicio::before,
+.separador-inicio::after {
+  content: "";
+
+  flex: 1;
+
+  height: 1px;
+
+  background:
+    #e4e9ed;
+}
+
+
+/* =========================================
+   BOTÃO JARDIM
+========================================= */
+
+.botao-jardim {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  padding:
+    15px;
+
+  border: none;
+
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #cc6486,
+      #b65073
+    );
+
+  color: white;
+
+  box-shadow:
+    0 9px 20px
+    rgba(184, 76, 112, 0.2);
+
+  transition:
+    0.2s;
+}
+
+
+.botao-jardim:hover {
+  transform:
+    translateY(-2px);
+}
+
+
+.botao-jardim strong {
+  display: block;
+
+  font-size: 15px;
+}
+
+
+.botao-jardim small {
+  display: block;
+
+  margin-top: 3px;
+
+  font-size: 11px;
+
+  font-weight: normal;
+
+  opacity: 0.9;
+}
+
+
+.icone-jardim {
+  font-size: 29px;
+}
+
+
+/* =========================================
+   SALESIANO / DOM BOSCO
+========================================= */
+
+.salesiano {
+  margin-top: 24px;
+
+  padding:
+    17px 10px
+    2px;
+
+  border-top:
+    1px solid
+    #e8ecef;
+
+  color:
+    #76838b;
+}
+
+
+.simbolo-salesiano {
+  font-size: 19px;
+}
+
+
+.salesiano p {
+  margin:
+    7px 0
+    0;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   TELA DAS FLORZINHAS
+========================================= */
+
+.flor {
+  font-size: 52px;
+
+  margin-bottom: 8px;
+}
+
+
+.dia {
+  margin:
+    0 0
+    8px;
+
+  color:
+    #8b96a0;
+
+  font-size: 14px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+
+.cartao-flor {
+  margin:
+    25px 0
+    20px;
+
+  padding: 22px;
+
+  background:
+    #f5f9ff;
+
+  border-radius: 20px;
+
+  text-align: left;
+}
+
+
+.rotulo {
+  margin:
+    0 0
+    8px;
+
+  color:
+    #7a8a99;
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+  letter-spacing: 0.7px;
+}
+
+
+.virtude {
+  margin: 0;
+
+  color:
+    var(--rosa);
+
+  font-size: 28px;
+
+  font-weight: bold;
+}
+
+
+.divisor {
+  margin:
+    18px 0;
+
+  text-align: center;
+
+  font-size: 24px;
+}
+
+
+.proposta {
+  margin: 0;
+
+  color:
+    #40515f;
+
+  font-size: 16px;
+
+  line-height: 1.6;
+}
+
+
+.oracao {
+  margin-top: 22px;
+
+  padding: 17px;
+
+  background:
+    white;
+
+  border-radius: 15px;
+
+  line-height: 1.5;
+}
+
+
+.frase {
+  margin-top: 20px;
+
+  color:
+    #6d7882;
+
+  font-style: italic;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   BOTÕES GERADOS PELO SCRIPT
+========================================= */
+
+.inicio > button {
+  width: 100%;
+
+  padding:
+    15px 18px;
+
+  margin:
+    11px 0;
+
+  border: none;
+
+  border-radius: 16px;
+
+  background:
+    var(--azul);
+
+  color:
+    white;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  transition:
+    0.2s;
+}
+
+
+.inicio > button:hover {
+  background:
+    var(--azul-escuro);
+
+  transform:
+    translateY(-2px);
+}
+
+
+.inicio > button.oferecer {
+  background:
+    var(--rosa);
+}
+
+
+.inicio > button.oferecer:hover {
+  background:
+    #aa496a;
+}
+
+
+.inicio > button.voltar {
+  background:
+    transparent;
+
+  color:
+    var(--azul);
+
+  border:
+    1px solid
+    var(--azul);
+}
+
+
+.inicio > button.voltar:hover {
+  background:
+    #edf5fd;
+}
+
+
+/* =========================================
+   CONFIRMAÇÃO
+========================================= */
+
+.confirmacao {
+  margin:
+    25px 0;
+
+  padding: 22px;
+
+  background:
+    #f5f9ff;
+
+  border-radius: 20px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   DIA 24
+========================================= */
+
+.especial-auxiliadora {
+  margin:
+    20px 0;
+
+  padding: 18px;
+
+  border-radius: 18px;
+
+  background:
+    #eaf4ff;
+
+  border:
+    1px solid
+    #b8d7f5;
+
+  color:
+    #285d91;
+
+  line-height: 1.5;
+}
+
+
+.especial-auxiliadora p {
+  margin:
+    7px 0;
+}
+
+
+/* =========================================
+   JARDIM DE MARIA
+========================================= */
+
+.contador-jardim {
+  margin:
+    20px 0
+    10px;
+
+  padding: 14px;
+
+  background:
+    #fff4f7;
+
+  border-radius: 16px;
+
+  color:
+    #b54f72;
+
+  font-weight: bold;
+
+  font-size: 15px;
+}
+
+
+.barra-progresso {
+  width: 100%;
+
+  height: 12px;
+
+  margin-top: 15px;
+
+  overflow: hidden;
+
+  background:
+    #edf0f2;
+
+  border-radius: 20px;
+}
+
+
+.barra-preenchida {
+  height: 100%;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ef9cb8,
+      #c05c7c
+    );
+
+  border-radius: 20px;
+
+  transition:
+    width 0.5s ease;
+}
+
+
+.porcentagem-jardim {
+  margin:
+    7px 0
+    20px;
+
+  color:
+    #87929a;
+
+  font-size: 12px;
+}
+
+
+.jardim {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      5,
+      1fr
+    );
+
+  gap: 10px;
+
+  margin:
+    22px 0;
+
+  padding: 15px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #eef8ff 0%,
+      #f5fbef 48%,
+      #e4f3d7 100%
+    );
+
+  border:
+    1px solid
+    #d8e9d1;
+
+  border-radius: 22px;
+}
+
+
+.dia-jardim {
+  position: relative;
+
+  min-height: 65px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background:
+    rgba(255, 255, 255, 0.7);
+
+  border:
+    1px solid
+    rgba(120, 150, 120, 0.18);
+
+  border-radius: 15px;
+
+  transition:
+    0.25s;
+}
+
+
+.dia-jardim.cumprido {
+  background:
+    rgba(255, 255, 255, 0.95);
+
+  box-shadow:
+    0 4px 10px
+    rgba(65, 110, 65, 0.12);
+
+  transform:
+    translateY(-2px);
+}
+
+
+.numero-dia {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color:
+    #7b8790;
+
+  font-size: 12px;
+}
+
+
+.flor-dia {
+  display: block;
+
+  font-size: 25px;
+}
+
+
+.dia-jardim.cumprido
+.flor-dia {
+  font-size: 30px;
+
+  filter:
+    drop-shadow(
+      0 3px 3px
+      rgba(0, 0, 0, 0.12)
+    );
+}
+
+
+.dia-auxiliadora {
+  background:
+    #eef7ff;
+
+  border:
+    2px solid
+    #7bb5e8;
+}
+
+
+.dia-auxiliadora::after {
+  content: "💙";
+
+  position: absolute;
+
+  top: -7px;
+
+  right: -5px;
+
+  font-size: 13px;
+}
+
+
+.dia-atual {
+  outline:
+    2px solid
+    #e4a3b8;
+
+  outline-offset: 2px;
+}
+
+
+.legenda-auxiliadora {
+  margin:
+    15px 0
+    5px;
+
+  padding: 12px;
+
+  background:
+    #eef7ff;
+
+  border-radius: 14px;
+
+  color:
+    #386b9b;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+
+.mensagem-jardim {
+  margin:
+    18px 0
+    22px;
+
+  color:
+    #687681;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media
+(max-width: 480px) {
+
+  body {
+    padding:
+      12px 9px;
+  }
+
+
+  .inicio {
+    padding:
+      21px 17px;
+
+    border-radius: 24px;
+  }
+
+
+  h1 {
+    font-size: 27px;
+  }
+
+
+  .hero-maria {
+    padding:
+      18px 12px;
+  }
+
+
+  .jardim {
+    gap: 7px;
+
+    padding: 10px;
+  }
+
+
+  .dia-jardim {
+    min-height: 58px;
+
+    border-radius: 12px;
+  }
+
+
+  .flor-dia {
+    font-size: 22px;
+  }
+
+
+  .dia-jardim.cumprido
+  .flor-dia {
+    font-size: 27px;
+  }
+
+}
