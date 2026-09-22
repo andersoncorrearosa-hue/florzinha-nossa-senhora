@@ -1,7 +1,3 @@
-/* =========================================
-   CONFIGURAÇÃO GERAL
-========================================= */
-
 :root {
   --azul: #2e6fa8;
   --azul-escuro: #24577f;
@@ -59,10 +55,6 @@ body {
 }
 
 
-/* =========================================
-   CARTÃO PRINCIPAL
-========================================= */
-
 .inicio {
   width: 100%;
 
@@ -85,10 +77,6 @@ body {
     rgba(255, 255, 255, 0.9);
 }
 
-
-/* =========================================
-   TOPO
-========================================= */
 
 .marca-topo {
   display: inline-flex;
@@ -114,17 +102,14 @@ body {
 }
 
 
-/* =========================================
-   HERO DE NOSSA SENHORA
-========================================= */
+/* NOSSA SENHORA */
 
 .hero-maria {
   position: relative;
 
   overflow: hidden;
 
-  padding:
-    22px 15px;
+  padding: 0;
 
   margin-bottom: 22px;
 
@@ -144,106 +129,38 @@ body {
 }
 
 
-.hero-maria::before {
-  content: "";
+.imagem-auxiliadora {
+  width: 100%;
 
-  position: absolute;
+  max-height: 390px;
 
-  width: 180px;
+  display: block;
 
-  height: 180px;
+  object-fit: cover;
 
-  border-radius: 50%;
-
-  background:
-    rgba(255, 255, 255, 0.5);
-
-  top: -80px;
-
-  left: -60px;
-}
-
-
-.hero-maria::after {
-  content: "";
-
-  position: absolute;
-
-  width: 150px;
-
-  height: 150px;
-
-  border-radius: 50%;
-
-  background:
-    rgba(255, 236, 196, 0.35);
-
-  bottom: -80px;
-
-  right: -45px;
-}
-
-
-.estrelas {
-  position: relative;
-
-  z-index: 2;
-
-  color: #e4b14d;
-
-  letter-spacing: 7px;
-
-  font-size: 18px;
-}
-
-
-.icone-maria {
-  position: relative;
-
-  z-index: 2;
-
-  margin:
-    8px 0
-    3px;
-
-  font-size: 47px;
-}
-
-
-.rosas-maria {
-  position: relative;
-
-  z-index: 2;
-
-  font-size: 27px;
-
-  letter-spacing: 4px;
+  object-position: center top;
 }
 
 
 .nome-maria {
-  position: relative;
+  margin: 0;
 
-  z-index: 2;
-
-  margin:
-    10px 0
-    0;
+  padding:
+    13px 10px;
 
   color:
     var(--azul);
 
+  background:
+    rgba(255,255,255,0.94);
+
   font-size: 15px;
 
   font-weight: bold;
-
-  letter-spacing: 0.2px;
 }
 
 
-/* =========================================
-   TÍTULO
-========================================= */
+/* TÍTULOS */
 
 h1 {
   margin:
@@ -287,10 +204,6 @@ h2 {
 }
 
 
-/* =========================================
-   MENSAGEM INICIAL
-========================================= */
-
 .mensagem {
   margin:
     0 auto
@@ -305,9 +218,7 @@ h2 {
 }
 
 
-/* =========================================
-   CHAMADA
-========================================= */
+/* CHAMADA */
 
 .chamada {
   display: flex;
@@ -362,9 +273,7 @@ h2 {
 }
 
 
-/* =========================================
-   BOTÕES
-========================================= */
+/* PERFIS */
 
 button {
   font-family: inherit;
@@ -491,9 +400,7 @@ button {
 }
 
 
-/* =========================================
-   SEPARADOR
-========================================= */
+/* SEPARADOR */
 
 .separador-inicio {
   display: flex;
@@ -530,9 +437,7 @@ button {
 }
 
 
-/* =========================================
-   BOTÃO JARDIM
-========================================= */
+/* BOTÃO DO JARDIM */
 
 .botao-jardim {
   width: 100%;
@@ -545,8 +450,7 @@ button {
 
   gap: 12px;
 
-  padding:
-    15px;
+  padding: 15px;
 
   border: none;
 
@@ -601,35 +505,72 @@ button {
 }
 
 
-/* =========================================
-   SALESIANO / DOM BOSCO
-========================================= */
+/* DOM BOSCO */
 
-.salesiano {
-  margin-top: 24px;
+.dom-bosco {
+  margin-top: 28px;
 
   padding:
-    17px 10px
-    2px;
+    20px 15px;
 
-  border-top:
+  background:
+    linear-gradient(
+      180deg,
+      #f6f8fa,
+      #ffffff
+    );
+
+  border-radius: 22px;
+
+  border:
     1px solid
-    #e8ecef;
+    #e6eaed;
+}
+
+
+.imagem-dom-bosco {
+  width: 100%;
+
+  max-width: 210px;
+
+  max-height: 280px;
+
+  display: block;
+
+  margin:
+    0 auto 12px;
+
+  object-fit: cover;
+
+  object-position: center top;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 9px 22px
+    rgba(46, 111, 168, 0.14);
+}
+
+
+.titulo-dom-bosco {
+  margin:
+    3px 0
+    7px;
+
+  color:
+    var(--azul);
+
+  font-size: 15px;
+
+  font-weight: bold;
+}
+
+
+.dom-bosco p:last-child {
+  margin: 0;
 
   color:
     #76838b;
-}
-
-
-.simbolo-salesiano {
-  font-size: 19px;
-}
-
-
-.salesiano p {
-  margin:
-    7px 0
-    0;
 
   font-size: 12px;
 
@@ -637,9 +578,7 @@ button {
 }
 
 
-/* =========================================
-   TELA DAS FLORZINHAS
-========================================= */
+/* TELAS DAS FLORZINHAS */
 
 .flor {
   font-size: 52px;
@@ -756,9 +695,7 @@ button {
 }
 
 
-/* =========================================
-   BOTÕES GERADOS PELO SCRIPT
-========================================= */
+/* BOTÕES GERADOS PELO SCRIPT */
 
 .inicio > button {
   width: 100%;
@@ -828,9 +765,7 @@ button {
 }
 
 
-/* =========================================
-   CONFIRMAÇÃO
-========================================= */
+/* CONFIRMAÇÃO */
 
 .confirmacao {
   margin:
@@ -847,9 +782,7 @@ button {
 }
 
 
-/* =========================================
-   DIA 24
-========================================= */
+/* DIA 24 */
 
 .especial-auxiliadora {
   margin:
@@ -879,9 +812,7 @@ button {
 }
 
 
-/* =========================================
-   JARDIM DE MARIA
-========================================= */
+/* JARDIM DE MARIA */
 
 .contador-jardim {
   margin:
@@ -955,10 +886,7 @@ button {
   display: grid;
 
   grid-template-columns:
-    repeat(
-      5,
-      1fr
-    );
+    repeat(5, 1fr);
 
   gap: 10px;
 
@@ -1121,9 +1049,7 @@ button {
 }
 
 
-/* =========================================
-   CELULAR
-========================================= */
+/* CELULAR */
 
 @media
 (max-width: 480px) {
@@ -1147,9 +1073,15 @@ button {
   }
 
 
-  .hero-maria {
-    padding:
-      18px 12px;
+  .imagem-auxiliadora {
+    max-height: 330px;
+  }
+
+
+  .imagem-dom-bosco {
+    max-width: 170px;
+
+    max-height: 230px;
   }
 
 
